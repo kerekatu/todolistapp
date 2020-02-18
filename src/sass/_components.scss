@@ -3,14 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: $color-contrast;
     border-radius: 0.6rem;
-    padding: $space-md;
+    padding: $space-lg;
+    background-color: $color-contrast-dark;
 
     &--completed > .feed__text {
       display: none;
-      background-color: $color-contrast;
-      padding: $space-md;
+      background-color: $color-contrast-dark;
+      padding: $space-lg;
     }
   }
 
@@ -40,6 +40,9 @@
   &__compose {
     display: flex;
     flex-direction: column;
+    background-color: $color-contrast-dark;
+    padding: $space-lg;
+    border-radius: 0.6rem;
   }
 
   &__label {
@@ -71,7 +74,7 @@
     }
 
     &--delete {
-      background-color: $color-contrast-dark;
+      background-color: $color-contrast;
     }
   }
 }

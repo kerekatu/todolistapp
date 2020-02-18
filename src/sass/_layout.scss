@@ -2,11 +2,11 @@
   display: grid;
   grid-template-rows: [header] 10rem [main] 1fr;
   grid-template-columns: minmax(40rem, 1fr);
-  grid-gap: $space-xl;
+  grid-gap: $space-sm;
   justify-content: center;
   margin: 0 auto;
-  padding: $space-lg;
-  max-width: 100rem;
+  padding: $space-xl;
+  max-width: 80rem;
 }
 
 .header {
@@ -16,7 +16,4 @@
 
 .feed {
   grid-row: main;
-  padding: $space-xl $space-lg;
-  border-radius: 0.4rem;
-  background-color: $color-contrast-dark;
 }
