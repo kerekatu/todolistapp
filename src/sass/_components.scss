@@ -1,0 +1,77 @@
+.feed {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $color-contrast;
+    border-radius: 0.6rem;
+    padding: $space-md;
+
+    &--completed > .feed__text {
+      display: none;
+      background-color: $color-contrast;
+      padding: $space-md;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: $space-lg;
+  }
+
+  &__item:last-child {
+    margin-bottom: $space-xl;
+  }
+
+  &__text {
+    color: $color-gray-light;
+    margin-bottom: $space-xs;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: $space-md;
+
+    & > .highlight {
+      margin-right: 1rem;
+    }
+  }
+
+  &__compose {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__input {
+    padding: $space-sm;
+    margin-bottom: $space-md;
+    width: 100%;
+    border: 0.4rem solid $color-contrast;
+    border-radius: 0.6rem;
+  }
+
+  &__btn {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    padding: $space-sm $space-md;
+    border: none;
+    border-radius: 0.6rem;
+    color: $color-white;
+
+    &--submit {
+      background-color: $color-contrast;
+      margin-top: $space-md;
+    }
+
+    &--delete {
+      background-color: $color-contrast-dark;
+    }
+  }
+}

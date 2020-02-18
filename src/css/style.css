@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+a:link,
+a:visited {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #916dd5;
+  color: #fff;
+  min-height: 100vh; }
+
+.heading-1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1; }
+
+.highlight {
+  display: flex;
+  font-weight: 700;
+  color: #fff; }
+
+.feed__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #916dd5;
+  border-radius: 0.6rem;
+  padding: 2rem; }
+  .feed__item--completed > .feed__text {
+    display: none;
+    background-color: #916dd5;
+    padding: 2rem; }
+
+.feed__item:not(:last-child) {
+  margin-bottom: 4rem; }
+
+.feed__item:last-child {
+  margin-bottom: 8rem; }
+
+.feed__text {
+  color: #f7f7fa;
+  margin-bottom: 0.5rem; }
+
+.feed__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem; }
+  .feed__box > .highlight {
+    margin-right: 1rem; }
+
+.feed__compose {
+  display: flex;
+  flex-direction: column; }
+
+.feed__label {
+  font-weight: 700;
+  font-size: 2rem; }
+
+.feed__input {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border: 0.4rem solid #916dd5;
+  border-radius: 0.6rem; }
+
+.feed__btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.6rem;
+  color: #fff; }
+  .feed__btn--submit {
+    background-color: #916dd5;
+    margin-top: 2rem; }
+  .feed__btn--delete {
+    background-color: #3e206d; }
+
+.container {
+  display: grid;
+  grid-template-rows: [header] 10rem [main] 1fr;
+  grid-template-columns: minmax(40rem, 1fr);
+  grid-gap: 8rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 4rem;
+  max-width: 100rem; }
+
+.header {
+  grid-row: header;
+  text-align: center; }
+
+.feed {
+  grid-row: main;
+  padding: 8rem 4rem;
+  border-radius: 0.4rem;
+  background-color: #3e206d; }

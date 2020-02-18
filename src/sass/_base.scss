@@ -1,0 +1,78 @@
+// VARIABLES
+$color-white: #fff;
+$color-black: #111;
+$color-black-light: #222;
+$color-gray: #666;
+$color-gray-light: #f7f7fa;
+
+$color-contrast: #916dd5;
+$color-contrast-dark: #3e206d;
+
+$font-size: 1.6rem;
+$font-family: 'Roboto', sans-serif;
+$font-weight: 400;
+$line-height: 1.6;
+
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+$space-xl: 8rem;
+
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+button {
+  font-family: $font-family;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%; // 16px = 1rem
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  background-color: $color-contrast;
+  color: $color-white;
+  min-height: 100vh;
+}
+
+// REUSABLE
+
+.heading-1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.highlight {
+  display: flex;
+  font-weight: 700;
+  color: $color-white;
+}
